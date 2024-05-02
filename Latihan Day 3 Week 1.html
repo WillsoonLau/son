@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav{
+                border: 1px solid black;
+                padding-left: 90px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            .container>div button {
+                border-width: 1px;
+                width: 75px;
+                height: 23px;
+                margin: -1px;
+                font-size: 10px;
+                transition: background-color 0.5s ease;
+            }
+            .container>div button.button_kiri {
+                border-radius: 4px 0px 0px 4px;
+            }
+            .container>div button.button_kanan {
+                border-radius: 0px 4px 4px 0px;
+            }
+            .container>div button.button_tengah {
+                border-radius: 0px;
+            }
+            .container > div button:hover {
+                background-color: grey;
+            }
+            .ponyo{
+                border-radius: 50%;
+            }
+            .table{
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            .table th{
+                border: 1px solid black;
+                padding: 8px;
+            }
+            .table td{
+                border: 1px solid black;
+            }
+            .fable{
+                padding: 8px;
+            }
+            #name{
+                width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="container" style="flex-direction: row; display: flex;">
+            <div style="display: flex; flex: 2; align-content: flex-start;">
+                <div class="Logo">
+                    <img class="ponyo" src="Ponyo Eve.png" alt="Logo" width="60" height="60">
+                </div>
+            </div>    
+            <div style="display: flex; flex: 1; align-content: center; justify-content: center; align-items: center;">
+                <div class="home"><button class="button_kiri">Home</button></div>
+                <div class="my_profile"><button class="button_tengah">My Profile</button></div>
+                <div class="portofolio"><button class="button_tengah">Portofolio</button></div>
+                <div class="message_us"><button class="button_kanan">Message Us</button></div>
+            </div>    
+        </nav>
+        <main class="fable" style="flex-direction: row; display: flex;">
+            <div style="display: flex; flex: 2; flex-direction: column;">
+                <h1>Form Belajar</h1>
+                <p>Ini adalah website latihan pertama</p>
+                <br>
+                <div style="display:flex; flex: 1; flex-direction: row;">
+                    <div style="display:flex; flex: 1; flex-direction: column;">
+                        <label for="name">Nama :</label>
+                        <label for="tanggal lahir">Tanggal Lahir :</label>
+                        <label for="jenis kelamin">Jenis Kelamin :</label>
+                        <label for="pesan">Pesan :</label>
+                    </div>
+                    <div style="display: flex; flex: 2; flex-direction: column;">
+                        <form action="" method="post">
+                            <input id="name" type="text" placeholder="Nama"/>
+                            <br>
+                            <input id="tanggal_lahir" type="date" placeholder="Tanggal Lahir"/>
+                            <br>
+                            <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-Laki"/>Laki-laki
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"/>Perempuan
+                            <br>
+                            <textarea rows="8"cols="50 px" placeholder="Pesan"></textarea>
+                            <br>
+                            <button type="button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex: 2; flex-direction: column;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th><b>Nama</b></th>
+                            <th><b>Tanggal Lahir</b></th>
+                            <th><b>Jenis Kelamin</b></th>
+                            <th><b>Pesan</b></th>
+                            <th><b>Profile</b></th>
+                            <th><b>Delete</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ada Lovelace</td>
+                            <td>December 10, 1815</td>
+                            <td>Perempuan</td>
+                            <td>Belajar Buat Website</td>
+                            <td><a href="https://web.whatsapp.com/">Klik Disini</a></td>
+                            <td><img src="https://pluspng.com/img-png/delete-button-png-delete-button-128.png" alt="Ini gambar dari web" width="50" height="50"/></td>
+                        </tr>
+                        <tr>
+                            <td>Grace Hopper</td>
+                            <td>December 9, 1906</td>
+                            <td>Perempuan</td>
+                            <td>Hello World</td>
+                            <td><a href="https://www.youtube.com/">Klik Disini</a></td>
+                            <td><img src="https://pluspng.com/img-png/delete-button-png-delete-button-128.png" alt="Ini gambar dari web" width="50" height="50"/></td>
+                        </tr>
+                        <tr>
+                            <td>Margaret Hamilton</td>
+                            <td>August 17, 1906</td>
+                            <td>Perempuan</td>
+                            <td>Test Dulu</td>
+                            <td><a href="https://chat.openai.com/">Klik Disini</a></td>
+                            <td><img src="https://pluspng.com/img-png/delete-button-png-delete-button-128.png" alt="Ini gambar dari web" width="50" height="50"/></td>
+                        </tr>
+                        <tr>
+                            <td>Joan Clarke</td>
+                            <td>June 24, 1917</td>
+                            <td>Laki-Laki</td>
+                            <td>Selalu Semangat</td>
+                            <td><a href="https://www.netflix.com/">Klik Disini</a></td>
+                            <td><img src="https://pluspng.com/img-png/delete-button-png-delete-button-128.png" alt="Ini gambar dari web" width="50" height="50"/></td>
+                        </tr>            
+                    </tbody>
+                </table>
+            </div>
+        
+        </main>
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
